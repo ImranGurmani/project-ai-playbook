@@ -1,8 +1,10 @@
-# AI Playbook for Projects
+# project-ai-playbook
+
+A centralized AI workflow playbook for web projects that defines coding rules, UI guardrails, responsive checks, change templates, and prompt standards so assistants like Codex, Cursor, and Claude make safer and more accurate edits.
 
 ## Project Description
 
-AI Playbook for Projects is a documentation scaffold for safer AI-assisted software work. It gives coding assistants and developers a shared set of project maps, rules, templates, and QA checks before implementation begins.
+project-ai-playbook is a documentation scaffold for safer AI-assisted software work. It gives coding assistants and developers a shared set of project maps, rules, templates, prompts, and QA checks before implementation begins.
 
 The repository currently contains documentation only. There is no runnable application, package manifest, frontend, backend, database schema, or build system yet.
 
@@ -17,6 +19,7 @@ This repository exists to make AI-assisted work more disciplined by requiring:
 - AI editing rules tied to the actual repository state.
 - A component guide for UI-safe edits.
 - A change-request template that reduces vague tasks.
+- A reusable prompt pack organized by development phase.
 - A QA checklist for reviewing every change.
 
 ## Features
@@ -26,6 +29,7 @@ This repository exists to make AI-assisted work more disciplined by requiring:
 - AI-specific rules for safe editing and avoiding blind assumptions.
 - UI/component guide for future pages, layouts, forms, tables, and sensitive UI areas.
 - Change-request template with required fields for scope, constraints, QA, and acceptance criteria.
+- Prompt pack for discovery, documentation, safe changes, QA, and maintenance.
 - Reusable QA checklist for documentation, UI, responsiveness, backend, data, and regression checks.
 - Practical safeguards for projects that are not yet implemented.
 
@@ -48,9 +52,10 @@ Start with the documentation files in this order:
 1. Read `PROJECT-INDEX.md` to understand the current repository state.
 2. Read `ARCHITECTURE-SUMMARY.md` to understand what architecture is verified or unclear.
 3. Read `AI-RULES.md` before asking an AI assistant to edit files.
-4. Use `CHANGE-TEMPLATE.md` to define a concrete change request.
-5. If UI exists or is added, update `COMPONENT-GUIDE.md`.
-6. After any change, run through `QA-CHECKLIST.md`.
+4. Use `PROMPT-PACK.md` to choose the right prompt chain.
+5. Use `CHANGE-TEMPLATE.md` to define a concrete change request.
+6. If UI exists or is added, update `COMPONENT-GUIDE.md`.
+7. After any change, run through `QA-CHECKLIST.md`.
 
 For a future implementation task, copy the change template, fill it in, then give it to the coding assistant with the relevant files or feature request.
 
@@ -69,6 +74,7 @@ Use this workflow from project scan to AI-assisted editing:
    - Keep `COMPONENT-GUIDE.md` current when UI code exists.
 
 3. **Prepare the change**
+   - Choose the right prompt chain from `PROMPT-PACK.md`.
    - Fill out `CHANGE-TEMPLATE.md`.
    - Define exact target behavior, involved files, constraints, forbidden mistakes, and QA checks.
 
@@ -92,6 +98,7 @@ This repository includes these generated documentation files:
 - `AI-RULES.md` - Project-specific rules for AI assistants such as Codex, Cursor, and Claude.
 - `COMPONENT-GUIDE.md` - Living guide for pages, layouts, shared components, forms, tables, and sensitive UI areas.
 - `CHANGE-TEMPLATE.md` - Copy-paste change request template for safe implementation planning.
+- `PROMPT-PACK.md` - Reusable prompt library organized by development phase.
 - `QA-CHECKLIST.md` - Reusable review checklist after every AI-assisted change.
 
 ## Best Practices
@@ -121,4 +128,4 @@ This repository includes these generated documentation files:
 - Add tests and document the test workflow.
 - Expand `PROJECT-INDEX.md` with real folders, routes, models, and config.
 - Expand `COMPONENT-GUIDE.md` with real pages, layouts, reusable components, and UI risks.
-- Keep `AI-RULES.md` updated as project conventions emerge.
+- Keep `AI-RULES.md` and `PROMPT-PACK.md` updated as project conventions emerge.
