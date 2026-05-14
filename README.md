@@ -59,6 +59,50 @@ Start with the documentation files in this order:
 
 For a future implementation task, copy the change template, fill it in, then give it to the coding assistant with the relevant files or feature request.
 
+## How This Works In Any Project
+
+Use this repository as a repeatable method, not as an application dependency.
+
+There are two practical ways to use it:
+
+1. **Copy the files into another project**
+   - Copy the Markdown files from this repository into the target project root.
+   - Ask the AI assistant to scan that actual project.
+   - Regenerate `PROJECT-INDEX.md`, `ARCHITECTURE-SUMMARY.md`, `AI-RULES.md`, `COMPONENT-GUIDE.md`, and `QA-CHECKLIST.md` based on that project's real code.
+   - Keep `CHANGE-TEMPLATE.md` and `PROMPT-PACK.md` as reusable workflow files.
+
+2. **Use this repo as a reference playbook**
+   - Keep this repository separate.
+   - Open `PROMPT-PACK.md`.
+   - Pick the prompt chain that matches the task.
+   - Paste the prompt into Codex, Cursor, Claude, or another assistant while working inside the real target project.
+   - Save the generated docs in the target project.
+
+Recommended process for any project:
+
+1. Start in the target project, not this playbook repository.
+2. Run the discovery prompts first:
+   - Repository Structure Scan
+   - Stack and Dependency Detection
+   - Architecture Mapping
+3. Generate or update the project docs:
+   - `PROJECT-INDEX.md`
+   - `ARCHITECTURE-SUMMARY.md`
+   - `AI-RULES.md`
+   - `COMPONENT-GUIDE.md`, if UI exists
+   - `QA-CHECKLIST.md`
+4. Before every future change, fill out `CHANGE-TEMPLATE.md`.
+5. Use the right implementation prompt:
+   - UI-Safe Edit Prompt for pages, layouts, components, forms, styles, or responsiveness.
+   - Backend-Safe Edit Prompt for routes, APIs, validation, auth, permissions, data, jobs, or integrations.
+6. After the change, run:
+   - Strict Self-Review Prompt
+   - Regression Risk Review
+   - QA checklist
+7. Update the docs again if files, stack, routes, components, data flow, config, or risks changed.
+
+The core rule is simple: first make the AI understand the current project, then ask it to change the project. Do not start with implementation prompts before discovery and documentation are current.
+
 ## Workflow
 
 Use this workflow from project scan to AI-assisted editing:
