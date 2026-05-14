@@ -15,6 +15,7 @@ Repository inspection found:
   - `ARCHITECTURE-SUMMARY.md`
   - `CHANGE-TEMPLATE.md`
   - `COMPONENT-GUIDE.md`
+  - `HOW-TO-USE.md`
   - `PROMPT-PACK.md`
   - `PROJECT-INDEX.md`
   - `QA-CHECKLIST.md`
@@ -51,6 +52,7 @@ C:\xampp\htdocs\aiplaybookforprojects\
 +-- AI-RULES.md
 +-- CHANGE-TEMPLATE.md
 +-- COMPONENT-GUIDE.md
++-- HOW-TO-USE.md
 +-- PROMPT-PACK.md
 +-- PROJECT-INDEX.md
 +-- QA-CHECKLIST.md
@@ -64,6 +66,7 @@ File notes:
 - `AI-RULES.md` defines project-specific AI editing rules.
 - `CHANGE-TEMPLATE.md` provides a reusable safe change-request template.
 - `COMPONENT-GUIDE.md` maps UI/component areas and marks current unknowns.
+- `HOW-TO-USE.md` explains when and how to use the playbook in another project, including the ready-to-copy Codex prompt.
 - `PROMPT-PACK.md` defines reusable prompt categories, prompt names, inputs, outputs, and chains.
 - `QA-CHECKLIST.md` provides reusable post-change QA checks.
 - `README.md` explains repository purpose, usage, workflow, and limitations.

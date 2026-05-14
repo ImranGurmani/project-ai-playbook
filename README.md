@@ -40,8 +40,9 @@ No installation is required for the current repository.
 This is a Markdown documentation project. To use it:
 
 1. Clone or copy the repository.
-2. Open the files in any Markdown editor, IDE, or GitHub.
-3. Use the templates before starting AI-assisted implementation work.
+2. Open `HOW-TO-USE.md`.
+3. Copy the provided Codex prompt into the target project where you want to generate project-specific AI docs.
+4. Use the templates before starting AI-assisted implementation work.
 
 There are currently no package manager commands such as `npm install`, `composer install`, or `pip install`.
 
@@ -49,13 +50,15 @@ There are currently no package manager commands such as `npm install`, `composer
 
 Start with the documentation files in this order:
 
-1. Read `PROJECT-INDEX.md` to understand the current repository state.
-2. Read `ARCHITECTURE-SUMMARY.md` to understand what architecture is verified or unclear.
-3. Read `AI-RULES.md` before asking an AI assistant to edit files.
-4. Use `PROMPT-PACK.md` to choose the right prompt chain.
-5. Use `CHANGE-TEMPLATE.md` to define a concrete change request.
-6. If UI exists or is added, update `COMPONENT-GUIDE.md`.
-7. After any change, run through `QA-CHECKLIST.md`.
+1. Read `HOW-TO-USE.md` first.
+2. Use the included Codex prompt inside the real target project.
+3. Read `PROJECT-INDEX.md` to understand the current repository state.
+4. Read `ARCHITECTURE-SUMMARY.md` to understand what architecture is verified or unclear.
+5. Read `AI-RULES.md` before asking an AI assistant to edit files.
+6. Use `PROMPT-PACK.md` to choose the right prompt chain.
+7. Use `CHANGE-TEMPLATE.md` to define a concrete change request.
+8. If UI exists or is added, update `COMPONENT-GUIDE.md`.
+9. After any change, run through `QA-CHECKLIST.md`.
 
 For a future implementation task, copy the change template, fill it in, then give it to the coding assistant with the relevant files or feature request.
 
@@ -142,8 +145,17 @@ This repository includes these generated documentation files:
 - `AI-RULES.md` - Project-specific rules for AI assistants such as Codex, Cursor, and Claude.
 - `COMPONENT-GUIDE.md` - Living guide for pages, layouts, shared components, forms, tables, and sensitive UI areas.
 - `CHANGE-TEMPLATE.md` - Copy-paste change request template for safe implementation planning.
+- `HOW-TO-USE.md` - Step-by-step usage method and ready-to-copy Codex prompt for applying this playbook to another project.
 - `PROMPT-PACK.md` - Reusable prompt library organized by development phase.
 - `QA-CHECKLIST.md` - Reusable review checklist after every AI-assisted change.
+
+## Access Policy
+
+This repository is intended to be read-only for general users.
+
+General users may read, clone, download, and copy the Markdown files into their own projects. Only the owner/admin should push commits, merge changes, or modify the playbook standards.
+
+GitHub permissions must be configured in repository settings to enforce this. Use branch protection on `main` and restrict push or merge access to the owner/admin account.
 
 ## Best Practices
 
